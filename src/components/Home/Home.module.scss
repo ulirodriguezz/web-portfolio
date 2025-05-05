@@ -1,5 +1,38 @@
-@use '../../styles/variables.scss' as *;
+@use '../../styles/tokens' as *;
 
+$image-width:200px;
 .mih2{
     color: var(--color-heading)
+}
+.introSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+.presentationDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.presentationDiv p{
+    margin-left: $margin-big;
+    width: 100%;
+}
+.presentationDiv span,.presentationDiv a{
+    color: $color-text-highligh;
+}
+.profilePhoto{
+    height: $image-width;
+    width: $image-width;
+    border-radius: calc($image-width/2);
+    border: 3px solid $color-heading;
+}
+.myProfile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    margin-top: calc($margin-big*2);
 }

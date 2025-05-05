@@ -1,0 +1,19 @@
+@use './variables.scss' as *;
+$color-background:var(--color-background);
+$color-card-bg: var(--color-card-bg);
+
+$color-button-bg:var(--color-button-bg);
+$color-button-text:var(--color-button-text);
+
+$color-heading:var(--color-heading);
+$color-paragraph:var(--color-paragraph);
+
+$color-link:var(--color-link);
+$color-link-hover:var(--color-link-hover);
+
+$color-border:var(--color-border);
+$color-text-highligh:var(--color-text-highlight);
+
+$margin-small:var(--margin-small);
+$margin-medium:var(--margin-medium);
+$margin-big:var(--margin-big);
