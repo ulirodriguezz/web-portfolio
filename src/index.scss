@@ -8,7 +8,7 @@
   box-sizing: border-box;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-body{
+.mybody{
   font-family: 'Inter', sans-serif;
   width: 100vw;
   min-height: 100vh;
@@ -16,6 +16,7 @@ body{
   flex-direction: column;
   align-items: center;
   background-color: var(--color-background);
+  overflow-x: hidden;
 }
 #root{
   width: 100%;
@@ -25,7 +26,7 @@ body{
   align-items: center;
 }
 
-h1, h2, h3, h4 {
+.my-h1, .my-h2, .my-h3, .my-h4 {
   color: var(--color-heading);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -33,24 +34,24 @@ h1, h2, h3, h4 {
 }
 
 
-p {
+.my-p {
   color: var(--color-paragraph);
   line-height: 1.8;
 }
 
 
-a {
+.my-a {
   color: var(--color-link);
   text-decoration: none;
 }
 
-a:hover {
+.my-a:hover {
   color: var(--color-link-hover);
 }
 
 
 
-button {
+.my-button {
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
   border: none;
@@ -61,12 +62,12 @@ button {
   font-weight: 600;
 }
 
-button:hover {
+.my-button:hover {
   background-color: #4A3C6A; 
 }
 
 
-hr {
+.my-hr {
   border: 1px solid var(--color-border);
   margin: 2rem 0;
 }
@@ -74,4 +75,10 @@ hr {
   height: 20px;
   width: 20px;
   object-fit: contain;
+}
+
+@media(max-width:1440px){
+  .my-p{
+    line-height: 1.6;
+  }
 }

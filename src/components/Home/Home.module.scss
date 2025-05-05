@@ -36,3 +36,11 @@ $image-width:200px;
     width: 60%;
     margin-top: calc($margin-big*2);
 }
+@media(max-width:1440px){
+    .introSection{
+        width: 80%;
+    }
+    .myProfile{
+        width: 80%;
+    }
+}
