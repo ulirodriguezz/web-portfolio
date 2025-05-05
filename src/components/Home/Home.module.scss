@@ -44,3 +44,10 @@ $image-width:200px;
         width: 80%;
     }
 }
+.viteReactDiv{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.3rem;
+    margin-bottom: $margin-medium;
+}

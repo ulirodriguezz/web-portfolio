@@ -1,6 +1,7 @@
 
 import CustomTabs from '../Common/CustomTabs'
 import CustomTabItem from '../Common/CutomTabItem'
+import NamedImage from '../Common/NamedImage/NamedImage'
 import styles from './Home.module.scss'
 function Profile(){
     return(
@@ -15,7 +16,15 @@ function Profile(){
             <h3 className='my-h3'>Frameworks</h3>
             <CustomTabs defaultTabName = "Frontend">
                 <CustomTabItem name="Frontend">
-                    FrontEnd Tab Content
+                    <h4 className='my-h4'>Frontend Stack</h4>
+                    <div className={styles.viteReactDiv}>
+                        <NamedImage imgSource='../../../src/assets/react.png' alt='React logo' name='React'/>
+                        <span>+</span>
+                        <NamedImage imgSource='../../../src/assets/vite.png' alt='React logo' name='Vite'/>   
+                    </div>
+                    <p className='my-p'>
+                        When developing Frontend applications, i use React as a Framework with Vite as a package manager.
+                    </p>
                 </CustomTabItem>
                 <CustomTabItem name="Backend">
                     Backend Tab Content
