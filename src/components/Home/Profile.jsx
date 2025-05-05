@@ -20,9 +20,6 @@ function Profile(){
                 <CustomTabItem name="Backend">
                     Backend Tab Content
                 </CustomTabItem>
-                <CustomTabItem name="Fullstack">
-                    Fullstack content
-                </CustomTabItem>
             </CustomTabs>
         </section>
     )

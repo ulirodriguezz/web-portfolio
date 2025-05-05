@@ -3,40 +3,7 @@
     width: 100%;
     margin-bottom: $margin-medium;
 }
-.tabsDiv ul{
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-:global(.nav-link.active){
-    background-color: #3B335A !important;
-    color: #DAD7F0 !important;
-    border: none !important;
-    border-bottom: 2px solid #A98CF2 !important;
-    font-weight: 600 !important;
+:global(.tab-content > .active) {
+    color: $color-paragraph;
 }
 
-:global(.nav-tabs) {
-    border-bottom: 2px solid #3F3A52 !important;
-}
-  
-:global(  .nav-tabs .nav-link) {
-    color: #B4AEC4;
-    border: none;
-    padding: 0.8rem 1.2rem;
-}
-  
-:global(.nav-tabs .nav-link:hover) {
-    color: #CBBDF7 !important;
-}
-  
-:global(.nav-tabs) {
-background-color: #2A263B;
-border-bottom: 1px solid #3F3A52;
-}
-:global(.nav-tabs .nav-link:hover) {
-color: #CBBDF7;
-}
-
-:global(.tab-content){
-color: $color-paragraph;
-}

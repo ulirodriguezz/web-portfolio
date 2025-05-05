@@ -1,0 +1,31 @@
+$body-bg: #1E1B2E;
+$body-color: #DAD7F0;
+
+$primary: #A98CF2;         // usado en botones primarios, tabs activos, etc.
+$secondary: #3B335A;       // botones secundarios o backgrounds alternativos
+$info: #CBBDF7;
+$light: #F4F1FA;
+$dark: #2A263B;
+
+$link-color: #A98CF2;
+$link-hover-color: #CBBDF7;
+
+$border-radius: 12px;
+$border-color: #3F3A52;
+
+$font-family-sans-serif: 'Inter', sans-serif;
+$headings-font-family: 'Poppins', sans-serif;
+
+// 🧹 Opcional: desactivar partes del framework que no usás
+$enable-shadows: true;
+$enable-gradients: false;
+
+//Tabs de bootstrap
+$nav-tabs-border-color: #3F3A52;
+$nav-tabs-link-active-color: #DAD7F0;
+$nav-tabs-link-active-bg: #3B335A;
+$nav-tabs-link-hover-border-color: #A98CF2;
+.tab-content{
+    display: flex
+}
+@import 'bootstrap/scss/bootstrap';

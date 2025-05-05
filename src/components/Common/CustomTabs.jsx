@@ -4,6 +4,7 @@ import styles from './CustomTabs.module.scss'
 import Tab from 'react-bootstrap/Tab';
 import React from 'react';
 function CustomTabs({children,defaultTabName}){
+    //Componente para crear tabs de forma dinamica 
     return(
         <div className={styles.tabsDiv}>
             <Tabs
@@ -11,17 +12,17 @@ function CustomTabs({children,defaultTabName}){
             id="frameworks-tab"
             className="mb-3"
             >
-                     {React.Children.map(children, (child) => {
-          if (!React.isValidElement(child)) return null;
+                {React.Children.map(children, (child) => {
+                if (!React.isValidElement(child)) return null;
 
-          const { name, children: tabContent } = child.props;
+                const { name, children: tabContent } = child.props;
 
-          return (
-            <Tab eventKey={name} title={name}>
-              {tabContent}
-            </Tab>
-          );
-        })}
+                return (
+                    <Tab eventKey={name} title={name}>
+                    {tabContent}
+                    </Tab>
+                );
+                })}
             </Tabs>
         </div>
     )
