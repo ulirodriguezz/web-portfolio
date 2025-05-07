@@ -16,9 +16,8 @@ function BackendStack(){
                         <NamedImage imgSource='../../../src/assets/maven.png' alt='Maven logo' name='Maven'/>   
                     </div>
                     <p className='my-p'>
-                        When it comes to developing a backend, I use Spring as a framework for 
-                        building Rest APIs that allow the frontend to access data stored in relational or non relational DBs.
-                         In addition to Spring, I use Maven as a build tool and dependency manager for my projects.
+                        Spring: Used to build several REST APIs from scratch using annotations and JPA. <br />
+                        Maven: Used for project build and dependency management across all my Java projects.
                     </p>
                     <h5 className='my-h5'><MdOutlineWeb className={styles.reactIcons}/> Languages</h5>
                     <div className={styles.viteReactDiv}>
@@ -27,9 +26,10 @@ function BackendStack(){
                         <NamedImage imgSource='../../../src/assets/sql.png' alt='SQL logo' name='SQL'/>
                     </div>
                     <p className='my-p'>
-                        Java is the programming language of my choice when developing APIs with Spring <br />
-                        Since I often work with relational databases, I use SQL and HQL for managing queries to the 
-                        database and data shemas.
+                        Java: Used to program all levels of the APIs. Including the controller, 
+                        service and data access layers, java classes, Spring security, business logic and so on.  <br />
+                        SQL: For creating schemas and queries to relational databases. Often combined with HQL 
+                        when working with Hibernate and JPA
                     </p>
                     <h5 className='my-h5'><FaDatabase className={styles.reactIcons}/> Databases and ORMs</h5>
                     <div className={styles.viteReactDiv}>
@@ -40,13 +40,11 @@ function BackendStack(){
                         <NamedImage imgSource='../../../src/assets/firestore.png' alt='Firestore logo' name='Firestore'/>
                     </div>
                     <p className='my-p'>
-                        At the time of storing data, the databases shown above are the ones I have used the most. <br />
-                        MySQL is my relational database of choice and the one I have the most experience with.
-                       <br />
-                        MongoDB and Firestore are the only noSQL databases I have used in any of my projects but i also have some basic knowlage of
-                        others like Cassandra, Neo4j and other storage services like AWS S3 buckets.
+                        MySQL: Primary database used in almost all my backend projects. <br />
+                        MongoDB and Firestore: Explored in side projects. I am familiar with their 
+                        structure and querying but I have not used them in many projects. <br />
                     </p>
-                    <h5 className='my-h5'><IoLibrary className={styles.reactIcons}/>Libraries adn Dependencies</h5>
+                    <h5 className='my-h5'><IoLibrary className={styles.reactIcons}/>Libraries and Dependencies</h5>
                     <div className={styles.viteReactDiv}>
                     <NamedImage imgSource='../../../src/assets/hibernate.svg' alt='Hibernate logo' name='Hibernate'/>
                         <span>+</span>
@@ -57,11 +55,11 @@ function BackendStack(){
 
                     </div>
                     <p className='my-p'>
-                        These are some of the libraries and dependencies I use the most when creating Rest APIs.
-                        When using MySQL I combine it with Hiberate and JPA for an easier mapping between 
-                        my Java classes and entities in the database. This also simplifies writing queries thanks to
-                        Hibernate's query language (HQL).
-                        I use Spring security to configure CORS and authentication as well as including filters for JSON Web Tokens (JWT).
+                    Hibernate + JPA: ORM used for mapping Java classes (JPA entities) to MySQL tables, as well as
+                    using its query language (HQL) for accesing and retrieving data. <br />
+                    Spring Security: Used to handle CORS, role-based access, session validation
+                    and authentication filters within the API
+                    JPA: Access token used together with Spring Security for validating user's credentials and sessions.
                     </p>
         </>
     )
