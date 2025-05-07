@@ -22,8 +22,8 @@ function Home (){
                         Currently, i am <span>searching for my first professional experience as a backend, frontend or fullstack developer</span> in order to grow
                         and become better at what i do by learning from more experienced professionals in the industry. 
                         <br />
-                        If you are looking for a passionate developer who is responsible and willing to learn, i invite you to <span>learn more about me</span>, my profile                         
-                        and my portfolio <span>in this site</span>.
+                        If you are looking for a passionate developer who is responsible and eager to learn, i invite you to <span>explore more about me</span>, my profile                         
+                        and my portfolio <span>on this site</span>.
                     </p>
                 </div>
                 

@@ -1,12 +1,17 @@
 @use '../../../styles/tokens' as *;
+
 .viteReactDiv{
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 1.3rem;
-    margin-bottom: $margin-medium   ;
+    margin-bottom: $margin-small   ;
 }
 .reactIcons{
     margin-right: 10px;
     font-size: 30px;
+    color:$color-icon;
+}
+.textHighlight{
+    color: $color-text-highligh;
 }

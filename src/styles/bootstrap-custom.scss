@@ -25,7 +25,18 @@ $nav-tabs-border-color: #3F3A52;
 $nav-tabs-link-active-color: #DAD7F0;
 $nav-tabs-link-active-bg: #3B335A;
 $nav-tabs-link-hover-border-color: #A98CF2;
-.tab-content{
-    display: flex
-}
+
+//Accordion 
+$accordion-bg: #2A263B;
+$accordion-color: #DAD7F0;
+$accordion-button-bg: #3B335A;
+$accordion-button-color: #DAD7F0;
+$accordion-button-active-bg: #A98CF2;
+$accordion-button-active-color: #1E1B2E;
+$accordion-border-color: #3F3A52;
+
+$accordion-button-focus-box-shadow: none;
+$accordion-button-focus-border-color: transparent;
+
 @import 'bootstrap/scss/bootstrap';
+

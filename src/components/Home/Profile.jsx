@@ -4,6 +4,7 @@ import CustomTabItem from '../Common/CutomTabItem'
 import styles from './Home.module.scss'
 import BackendStack from './Stacks/BackendStack';
 import FrontendStack from './Stacks/FrontendStack';
+import Others from './Stacks/Others';
 function Profile(){
     return(
         <section className={styles.myProfile}>
@@ -14,13 +15,16 @@ function Profile(){
                 <br />
                 I am capable of developing web applications from end to end including APIs and Databases (SQL and noSQL).
             </p>
-            <h3 className='my-h3'>Frameworks</h3>
+            <h3 className='my-h3'>Skills and Tech Stack</h3>
             <CustomTabs defaultTabName = "Frontend">
                 <CustomTabItem name="Frontend">
                     <FrontendStack/>
                 </CustomTabItem>
                 <CustomTabItem name="Backend">
                     <BackendStack/>
+                </CustomTabItem>
+                <CustomTabItem name="Extra Tools">
+                    <Others/>
                 </CustomTabItem>
             </CustomTabs>
         </section>
