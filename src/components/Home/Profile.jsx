@@ -9,11 +9,31 @@ function Profile(){
     return(
         <section className={styles.myProfile}>
             <h2 className='my-h2'>My Profile</h2>
-            <p className='my-p'>
-                As a student of software engenieering, I have learnt to develop scalable solutions for both backend and frontend.
-                I have developed several Rest APIs with Spring boot as a framework and Web Apps and SPAs with React.
-                <br />
-                I am capable of developing web applications from end to end including APIs and Databases (SQL and noSQL).
+            <p>
+                As a software engineering student, I have learned to develop scalable solutions 
+                for both frontend and backend systems.
+            </p>
+            <p>
+                I have been part of development teams for academic projects, where we built and deployed 
+                several REST APIs using
+                Spring Boot as a framework, as well as web applications with React.
+            </p>
+            <p>
+                These experiences helped me become familiar with object-oriented programming (OOP) and design
+                 patterns, training me
+                to write scalable and clean code while paying close attention to industry best practices and
+                 application performance.
+            </p>
+            <p>
+                I enjoy working with others and learning from their experiences, and I am effective at 
+                communicating my ideas and
+                concerns respectfully, while also being receptive to feedback. <br />
+                Additionally, I am fluent in both english (C1 Cambridge Level) and spanish
+            </p>
+            <p>
+                I am capable of developing full web applications, including APIs and both SQL and NoSQL databases.
+                In addition to this, I have basic knowledge of infrastructure providers such as AWS, Railway, and Vercel, which I have used to deploy some
+                of my projects.
             </p>
             <h3 className='my-h3'>Skills and Tech Stack</h3>
             <CustomTabs defaultTabName = "Frontend">
@@ -23,7 +43,7 @@ function Profile(){
                 <CustomTabItem name="Backend">
                     <BackendStack/>
                 </CustomTabItem>
-                <CustomTabItem name="Extra Tools">
+                <CustomTabItem name="Workflow Tools">
                     <Others/>
                 </CustomTabItem>
             </CustomTabs>

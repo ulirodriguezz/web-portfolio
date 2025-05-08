@@ -1,5 +1,4 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+
 import styles from './Home.module.scss';
 import { useEffect, useState } from 'react';
 import Profile from './Profile';
