@@ -3,6 +3,7 @@ import styles from './NavPane.module.scss';
 function NavPane() {
   return (
     <header>
+      <h1 className={`'my-h1' ${styles.navTitle}`}> Portfolio</h1>
       <nav className={styles.navPane} aria-label="Main navigation">
         <ul className={styles.navUl}>
           <li className={styles.navLi}><a href="#perfil" className={styles.link}>Perfil</a></li>
