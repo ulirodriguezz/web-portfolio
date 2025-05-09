@@ -1,9 +1,8 @@
 import styles from './Navbar.module.scss'
+import NavPane from './NavPane/NavPane'
 function Navbar (){
     return( 
-        <header>
-            <h1>Welcome to my developer portfolio</h1>
-        </header>
+        <NavPane/>
     )
 };
 export default Navbar
