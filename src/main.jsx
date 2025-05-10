@@ -7,13 +7,14 @@ import './styles/bootstrap-custom.scss'
 import Navbar from './components/Navbar/Navbar.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import BackendStack from './components/Home/Stacks/BackendStack.jsx'
+import Contact from './components/Contact/Contact.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route  path='/' element={<Home/>}/>
-        <Route  path='/contact' element={<></>}/>
+        <Route  path='/contact' element={<Contact/>}/>
         <Route  path='/profile' element={<></>}/>
         <Route  path='/projects' element={<></>}/>
         

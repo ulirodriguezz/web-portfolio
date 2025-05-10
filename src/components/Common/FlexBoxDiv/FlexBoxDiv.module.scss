@@ -1,0 +1,13 @@
+@use '../../../styles/tokens' as *;
+.rowFlexBox{
+    display: flex;
+    flex-direction: row;
+}
+.columnFlexBox{
+    display: flex;
+    flex-direction: column;
+}
+.genericDiv{
+    width: 100%;
+    background-color: transparent;
+}
