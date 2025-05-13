@@ -9,20 +9,21 @@ function Contact (){
     return(
        <section className={styles.contactSection} aria-labelledby='contact-title'>
             <div className={styles.contactFormDiv}>
-                <header>
-                    <h2>Let's get in touch!</h2>
-                    <p>Fill out the form to get in touch with me. I'll reply as soon as I can</p>
-                    <form action="submit" className={styles.contactForm}>
+                <header className={styles.contactFormHeader}>
+                    <h2 id='contact-title' className='my-h1'>Let's get in touch!</h2>
+                    <p className='my-p'> Fill out the form to get in touch with me. I'll reply as soon as I can</p>
+                </header>
+                <form action="submit" className={styles.contactForm}>
                         <LabeledTextInput name='name-input' id='name-input' label='Name' placeholder='Enter your name'/>
                         <LabeledTextInput name='comapny-input' id='company-input' label='Company (Optional)' placeholder='Enter your comapny name'/>
                         <LabeledTextInput name='email-input' id='email-input' label='Email Adress' placeholder='Enter your email' type='email'/>
                         <LabeledTextInput name='message-input' id='message-input' label='Message'
                         placeholder="Write your message here" type='email' size='big'/>
                         <button type="submit" className={styles.contactSubmitButton}>Submit</button>
-                    </form>
-                </header>
+                </form>
             </div>
             <aside className={styles.contactInfo}>
+                <h4 className='my-h4'>Contact Information</h4>
                <FlexBoxDiv>
                     <CiMail/>
                     <span className={styles.contactInfoText}>ulirodrigueze@gmail.com</span>

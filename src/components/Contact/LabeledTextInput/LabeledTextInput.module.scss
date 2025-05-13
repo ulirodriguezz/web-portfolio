@@ -1,1 +1,15 @@
 @use '../../../styles/tokens' as *;
+.labeledInputDiv{
+    display: flex;
+    flex-direction: column;
+}
+.inputLabel{
+    color:$color-button-text;
+}
+.contactInput{
+    background-color: $color-contact-panel;
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    height: 2em;
+}

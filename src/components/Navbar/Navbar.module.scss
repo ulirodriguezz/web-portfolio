@@ -1,8 +1,1 @@
 @use '../../styles/tokens' as *;
-header{
-    display: flex;
-    justify-content: center;
-    margin-top: $margin-small;
-    margin-bottom: $margin-big;
-    position: sticky;
-}
