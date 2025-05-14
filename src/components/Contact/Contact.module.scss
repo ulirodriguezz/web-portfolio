@@ -44,4 +44,18 @@ $padding-contact:30px;
     width: 50%;
     padding: $padding-contact;
     border-radius: 15px;
+    gap: 20px;
+}
+.contactIcon{
+    padding: 12px 6px 12px 6px;
+    background-color: #241f36;
+    display: inline;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+.contactIcon svg{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    font-size: 2em;
 }

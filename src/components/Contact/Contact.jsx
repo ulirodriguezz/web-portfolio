@@ -25,16 +25,22 @@ function Contact (){
             <aside className={styles.contactInfo}>
                 <h4 className='my-h4'>Contact Information</h4>
                <FlexBoxDiv>
-                    <CiMail/>
+                    <div className={styles.contactIcon}> 
+                        <CiMail/>
+                    </div>
                     <span className={styles.contactInfoText}>ulirodrigueze@gmail.com</span>
                </FlexBoxDiv>
                 <FlexBoxDiv>
-                    <LuPhone />
-                    <span className={styles.contactInfoText}>54 9 1130150582</span>
+                    <div className={styles.contactIcon}>
+                        <LuPhone  />
+                    </div>
+                    <span className={styles.contactInfoText}>+54 9 1130150582</span>
                </FlexBoxDiv>
                 <FlexBoxDiv>
-                    <FaLinkedin />
-                    <a href="https://www.linkedin.com/in/ulises-rodriguez-ellerman-a09197271/" target='blank'>Visit my Linkedin profile</a>
+                    <div className={styles.contactIcon}>
+                        <FaLinkedin />  
+                    </div>
+                    <a href="https://www.linkedin.com/in/ulises-rodriguez-ellerman-a09197271/" target='blank'>My Linkedin</a>
                </FlexBoxDiv>
 
             </aside>
