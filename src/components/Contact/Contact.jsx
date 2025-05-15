@@ -5,7 +5,15 @@ import LabeledTextInput from './LabeledTextInput/LabeledTextInput';
 import { CiMail } from "react-icons/ci";
 import { LuPhone } from "react-icons/lu";
 import { FaLinkedin } from "react-icons/fa";
+import LottieAnimatedIcon from '../Common/LottieAnimatedIcon/LottieAnimatedIcon';
+import sendIcon from '../../assets/animated-icons/email-send.json'
+import { useState } from 'react';
 function Contact (){
+    const [hideSendIcon,setHideSendIcon] = useState(true);
+    const handleClick = (e)=>{
+        e.preventDefault();
+        setHideSendIcon(false);
+    }
     return(
        <section className={styles.contactSection} aria-labelledby='contact-title'>
             <div className={styles.contactFormDiv}>
@@ -19,7 +27,10 @@ function Contact (){
                         <LabeledTextInput name='email-input' id='email-input' label='Email Adress' placeholder='Enter your email' type='email'/>
                         <LabeledTextInput name='message-input' id='message-input' label='Message'
                         placeholder="Write your message here" type='email' size='big'/>
-                        <button type="submit" className={styles.contactSubmitButton}>Submit</button>
+                        <button type="submit" className={styles.contactSubmitButton} onClick={handleClick}>
+                            Submit 
+                            <LottieAnimatedIcon animData={sendIcon} loop={true} autoplay={true} hidden={hideSendIcon}/>
+                        </button>
                 </form>
             </div>
             <aside className={styles.contactInfo}>
@@ -40,7 +51,7 @@ function Contact (){
                     <div className={styles.contactIcon}>
                         <FaLinkedin />  
                     </div>
-                    <a href="https://www.linkedin.com/in/ulises-rodriguez-ellerman-a09197271/" target='blank'>My Linkedin</a>
+                    <a href="https://www.linkedin.com/in/ulises-rodriguez-ellerman-a09197271/" target='blank' className={styles.styledLink}>My Linkedin</a>
                </FlexBoxDiv>
 
             </aside>

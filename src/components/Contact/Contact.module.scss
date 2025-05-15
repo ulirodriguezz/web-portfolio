@@ -36,6 +36,9 @@ $padding-contact:30px;
     color: $color-card-bg;
     font-weight: bold;
     border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contactInfo{
     display: flex;
@@ -58,4 +61,7 @@ $padding-contact:30px;
     height: 30px;
     object-fit: contain;
     font-size: 2em;
+}
+.styledLink{
+    text-decoration: none;
 }
