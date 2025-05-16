@@ -9,7 +9,7 @@ import ContacForm from './ContactForm';
 import ContactFormSent from './ContactFormSent/ContactFormSent';
 function Contact (){
     const [messageSent,setMessageSent] = useState(false);
-    const handleClick = (e)=>{
+    const handleSubmit = (e)=>{
         e.preventDefault();
         setMessageSent(true);
     }
@@ -20,7 +20,7 @@ function Contact (){
                     <h2 id='contact-title' className='my-h1'>Let's get in touch!</h2>
                     <p className='my-p' hidden={messageSent}> Fill out the form to get in touch with me. I'll reply as soon as I can</p>
                 </header>
-                {!messageSent?<ContacForm onClick={handleClick}/>:<ContactFormSent/>}
+                {!messageSent?<ContacForm onSubmit={handleSubmit}/>:<ContactFormSent/>}
             </div>  
             <aside className={styles.contactInfo}>
                 <h4 className='my-h4'>Contact Information</h4>

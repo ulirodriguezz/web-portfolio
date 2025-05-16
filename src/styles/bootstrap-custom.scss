@@ -1,42 +1,38 @@
-$body-bg: #1E1B2E;
-$body-color: #DAD7F0;
+@use 'bootstrap/scss/bootstrap' with (
+  $body-bg: #1E1B2E,
+  $body-color: #DAD7F0,
 
-$primary: #A98CF2;         // usado en botones primarios, tabs activos, etc.
-$secondary: #3B335A;       // botones secundarios o backgrounds alternativos
-$info: #CBBDF7;
-$light: #F4F1FA;
-$dark: #2A263B;
+  $primary: #A98CF2,
+  $secondary: #3B335A,
+  $info: #CBBDF7,
+  $light: #F4F1FA,
+  $dark: #2A263B,
 
-$link-color: #A98CF2;
-$link-hover-color: #CBBDF7;
+  $link-color: #A98CF2,
+  $link-hover-color: #CBBDF7,
 
-$border-radius: 12px;
-$border-color: #3F3A52;
+  $border-radius: 12px,
+  $border-color: #3F3A52,
 
-$font-family-sans-serif: 'Inter', sans-serif;
-$headings-font-family: 'Poppins', sans-serif;
+  $font-family-sans-serif: ('Inter', sans-serif),
+  $headings-font-family: ('Poppins', sans-serif),
 
-// 🧹 Opcional: desactivar partes del framework que no usás
-$enable-shadows: true;
-$enable-gradients: false;
+  $enable-shadows: true,
+  $enable-gradients: false,
 
-//Tabs de bootstrap
-$nav-tabs-border-color: #3F3A52;
-$nav-tabs-link-active-color: #DAD7F0;
-$nav-tabs-link-active-bg: #3B335A;
-$nav-tabs-link-hover-border-color: #A98CF2;
+  $nav-tabs-border-color: #3F3A52,
+  $nav-tabs-link-active-color: #DAD7F0,
+  $nav-tabs-link-active-bg: #3B335A,
+  $nav-tabs-link-hover-border-color: #A98CF2,
 
-//Accordion 
-$accordion-bg: #2A263B;
-$accordion-color: #DAD7F0;
-$accordion-button-bg: #3B335A;
-$accordion-button-color: #DAD7F0;
-$accordion-button-active-bg: #A98CF2;
-$accordion-button-active-color: #1E1B2E;
-$accordion-border-color: #3F3A52;
+  $accordion-bg: #2A263B,
+  $accordion-color: #DAD7F0,
+  $accordion-button-bg: #3B335A,
+  $accordion-button-color: #DAD7F0,
+  $accordion-button-active-bg: #A98CF2,
+  $accordion-button-active-color: #1E1B2E,
+  $accordion-border-color: #3F3A52,
 
-$accordion-button-focus-box-shadow: none;
-$accordion-button-focus-border-color: transparent;
-
-@import 'bootstrap/scss/bootstrap';
-
+  $accordion-button-focus-box-shadow: none,
+  $accordion-button-focus-border-color: transparent
+);

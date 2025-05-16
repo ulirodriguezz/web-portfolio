@@ -1,14 +1,7 @@
 
 import styles from './Home.module.scss';
-import { useEffect, useState } from 'react';
 import Profile from './Profile';
 function Home (){
-    
-    const [theme, setTheme] = useState('dark');
-    useEffect(()=>{
-        document.body.classList.remove('theme-dark', 'theme-light');
-        document.body.classList.add(`theme-${theme}`);
-    },[theme]);
     return( 
         <>
             <section className={styles.introSection}>
