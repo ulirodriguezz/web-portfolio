@@ -20,6 +20,7 @@ $padding-contact:30px;
     display: flex;
     flex-direction: column;
     background-color: transparent;
+    align-items: center;
 }
 .contactForm{
     display: flex;
@@ -47,6 +48,14 @@ $padding-contact:30px;
     width: 50%;
     padding: $padding-contact;
     border-radius: 15px;
+    align-items: center;
+    gap: 20px;
+}
+.contactInfoItemList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
     gap: 20px;
 }
 .contactIcon{
@@ -64,4 +73,8 @@ $padding-contact:30px;
 }
 .styledLink{
     text-decoration: none;
+}
+.contactAnimationDiv{
+    height: 200px;
+    width: 200px;
 }

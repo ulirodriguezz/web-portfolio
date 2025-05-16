@@ -1,7 +1,7 @@
 import Lottie from 'lottie-react';
 import styles from './LottieAnimatedIcon.module.scss'
 import { useEffect, useRef } from 'react';
-function LottieAnimatedIcon({animData,loop,autoplay,hidden}){
+function LottieAnimatedIcon({animData,loop,autoplay,hidden,height = '30px',width = '30px'}){
     const aniamtionRef = useRef()
     useEffect(()=>{
         if(!hidden){
@@ -9,15 +9,21 @@ function LottieAnimatedIcon({animData,loop,autoplay,hidden}){
             aniamtionRef.current.play();
         }
     },[hidden])
-    useEffect(()=>{
-        return()=>{
-            aniamtionRef.current.destroy()
-        }
-    },[])
+
+    useEffect(() => {
+        const instance = aniamtionRef.current;
+        return () => {
+            try {
+                instance?.destroy();
+            } catch (err) {
+                console.warn('Error al destruir Lottie:', err);
+            }
+        };
+    }, []);
     return(
-        <div className={styles.iconContainer} style={{visibility: hidden? 'hidden':'visible'}}>
+        <div className={styles.iconContainer} style={{visibility: hidden? 'hidden':'visible',height:height,width:width}}>
             <Lottie
-            lottieRef={aniamtionRef}
+                lottieRef={aniamtionRef}
                 animationData={animData}
                 loop={loop}
                 autoplay={autoplay}
