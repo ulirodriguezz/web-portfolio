@@ -6,7 +6,7 @@ import { CiMail } from "react-icons/ci";
 import { LuPhone } from "react-icons/lu";
 import { FaLinkedin } from "react-icons/fa";
 import LottieAnimatedIcon from '../Common/LottieAnimatedIcon/LottieAnimatedIcon';
-import sendIcon from '../../assets/animated-icons/email-send.json'
+import sendIcon from '../../assets/animated-icons/mail-success-icon.json'
 import { useState } from 'react';
 function Contact (){
     const [hideSendIcon,setHideSendIcon] = useState(true);
@@ -29,7 +29,7 @@ function Contact (){
                         placeholder="Write your message here" type='email' size='big'/>
                         <button type="submit" className={styles.contactSubmitButton} onClick={handleClick}>
                             Submit 
-                            <LottieAnimatedIcon animData={sendIcon} loop={true} autoplay={true} hidden={hideSendIcon}/>
+                            <LottieAnimatedIcon animData={sendIcon} loop={false} autoplay={false} hidden={hideSendIcon} key={hideSendIcon? 'hideKey':'showKey'}/>
                         </button>
                 </form>
             </div>

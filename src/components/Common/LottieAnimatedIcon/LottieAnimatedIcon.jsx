@@ -9,14 +9,18 @@ function LottieAnimatedIcon({animData,loop,autoplay,hidden}){
             aniamtionRef.current.play();
         }
     },[hidden])
-
+    useEffect(()=>{
+        return()=>{
+            aniamtionRef.current.destroy()
+        }
+    },[])
     return(
         <div className={styles.iconContainer} style={{visibility: hidden? 'hidden':'visible'}}>
             <Lottie
             lottieRef={aniamtionRef}
                 animationData={animData}
-                loop={false}
-                autoplay={false}
+                loop={loop}
+                autoplay={autoplay}
             />
         </div>
     )
