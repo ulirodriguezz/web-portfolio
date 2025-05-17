@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './components/Home/Home';
-import Contact from './components/Contact/Contact';
+import ContactContainer from './components/Contact/ContactContainer';
 import Navbar from './components/Navbar/Navbar';
 import emailjs from '@emailjs/browser';
 
@@ -28,7 +28,7 @@ function App() {
       <Navbar />
       <Routes location={location}>
         <Route path='/' element={<Home setTheme={setTheme} />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/contact' element={<ContactContainer />} />
         <Route path='/profile' element={<></>} />
         <Route path='/projects' element={<></>} />
       </Routes>
