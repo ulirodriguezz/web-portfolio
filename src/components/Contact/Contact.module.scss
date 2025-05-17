@@ -49,19 +49,20 @@ $padding-contact:30px;
     padding: $padding-contact;
     border-radius: 15px;
     align-items: center;
-    gap: 20px;
 }
 .contactInfoItemList{
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 .contactIcon{
-    padding: 12px 6px 12px 6px;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px;
     background-color: #241f36;
-    display: inline;
     border-radius: 20px;
     margin-right: 5px;
 }

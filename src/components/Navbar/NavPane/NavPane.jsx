@@ -4,7 +4,7 @@ import styles from './NavPane.module.scss';
 function NavPane() {
   return (
     <header className={styles.mainHeader}>
-      <h1 className={`'my-h1' ${styles.navTitle}`}> Portfolio</h1>
+      <h1 className={`my-h1 ${styles.navTitle}`}> Portfolio</h1>
       <nav className={styles.navPane} aria-label="Main navigation">
         <ul className={styles.navUl}>
           <li className={styles.navLi}><NavLink to="/" className={styles.link}>Home</NavLink></li>
