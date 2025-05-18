@@ -8,7 +8,7 @@ function FrontendStack(){
     return(
         <>
             <h4 className='my-h4'>Frontend Stack</h4>
-                <p>These are the tools and technologies I use when building modern web applications.</p>
+                <p className="my-p">These are the tools and technologies I use when building modern web applications.</p>
                 <h5 className='my-h5'><SiFramework className={styles.reactIcons}/> Frameworks and Bundlers</h5>
                 <div className={styles.viteReactDiv}>
                     <NamedImage imgSource='../../../src/assets/react.png' alt='React logo' name='React'/>

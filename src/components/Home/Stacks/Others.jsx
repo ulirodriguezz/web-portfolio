@@ -7,7 +7,7 @@ function Others() {
     return (
         <>
             <h4 className='my-h4'>Other Skills and Tools</h4>
-            <p>These are some tools and thecnologies I often use when working on my projects.</p>
+            <p className="my-p">These are some tools and thecnologies I often use when working on my projects.</p>
             <h5 className='my-h5'><AiOutlineBranches className={styles.reactIcons} />Version Controller</h5>
             <div className={styles.viteReactDiv}>
                 <NamedImage imgSource='../../../src/assets/git.png' alt='Git logo' name='Git' />

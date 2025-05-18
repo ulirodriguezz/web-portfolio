@@ -1,21 +1,21 @@
 @use '../../styles/tokens' as *;
 
 
-$padding-contact: 30px;
+$padding-contact: 1.8em;
 $icon-bg-color: #241f36;
 $button-hover: #CBBDF7;
 $button-hover-shadow: #CBBDF7aa;
-$icon-size: 30px;
-$contact-radius: 30px;
+$icon-size: 0.8em;
+$contact-radius: 1.8em;
 
 .contactSection {
   display: flex;
   width: 80%;
-  height: 550px;
+  height:80vh;
   background-color: $color-contact-bg;
   padding: $padding-contact;
   border-radius: $contact-radius;
-  gap: 60px;
+  gap: 3em;
 }
 
 

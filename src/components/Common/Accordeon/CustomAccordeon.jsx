@@ -4,7 +4,7 @@ function CustomAccordeon({children,title}){
     return(
         <Accordion className={styles.skillAccordion} defaultActiveKey='0'>
             <Accordion.Item eventKey="0">
-                    <Accordion.Header>{title}</Accordion.Header>
+                    <Accordion.Header><span className={styles.title}>{title}</span></Accordion.Header>
                     <Accordion.Body>
                     {children}
                     </Accordion.Body>

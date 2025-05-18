@@ -9,28 +9,28 @@ function Profile(){
     return(
         <section className={styles.myProfile}>
             <h2 className='my-h2'>My Profile</h2>
-            <p>
+            <p className='my-p'>
                 As a software engineering student, I have learned to develop scalable solutions 
                 for both frontend and backend systems.
             </p>
-            <p>
+            <p className='my-p'>
                 I have been part of development teams for academic projects, where we built and deployed 
                 several REST APIs using
                 Spring Boot as a framework, as well as web applications with React.
             </p>
-            <p>
+            <p className='my-p'>
                 These experiences helped me become familiar with object-oriented programming (OOP) and design
                  patterns, training me
                 to write scalable and clean code while paying close attention to industry best practices and
                  application performance.
             </p>
-            <p>
+            <p className='my-p'>
                 I enjoy working with others and learning from their experiences, and I am effective at 
                 communicating my ideas and
                 concerns respectfully, while also being receptive to feedback. <br />
                 Additionally, I am fluent in both english (C1 Cambridge Level) and spanish
             </p>
-            <p>
+            <p className='my-p'>
                 I am capable of developing full web applications, including APIs and both SQL and NoSQL databases.
                 In addition to this, I have basic knowledge of infrastructure providers such as AWS, Railway, and Vercel, which I have used to deploy some
                 of my projects.

@@ -9,7 +9,7 @@ function BackendStack() {
     return (
         <>
             <h4 className='my-h4'>Backend Stack</h4>
-            <p>These are the tools and technologies I use when building Rest APIs.</p>
+            <p className="my-p">These are the tools and technologies I use when building Rest APIs.</p>
             <h5 className='my-h5'><SiFramework className={styles.reactIcons} /> Frameworks and Tools</h5>
             <div className={styles.viteReactDiv}>
                 <NamedImage imgSource='../../../src/assets/spring.png' alt='Spring logo' name='Spring' />
