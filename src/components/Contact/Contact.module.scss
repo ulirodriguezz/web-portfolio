@@ -1,7 +1,8 @@
 @use '../../styles/tokens' as *;
 
-$padding-contact:30px;
-.contactSection{
+$padding-contact: 30px;
+
+.contactSection {
     display: flex;
     width: 80%;
     height: 550px;
@@ -10,28 +11,32 @@ $padding-contact:30px;
     border-radius: 30px;
     gap: 60px;
 }
-.contactFormDiv{
+
+.contactFormDiv {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 50%;
 }
-.contactFormHeader{
+
+.contactFormHeader {
     display: flex;
     flex-direction: column;
     background-color: transparent;
     align-items: center;
 }
-.contactForm{
+
+.contactForm {
     display: flex;
     flex-direction: column;
     gap: 10px;
     height: 100%;
 }
-.contactSubmitButton{
+
+.contactSubmitButton {
     margin-top: auto;
     justify-self: flex-end;
-    background-color:$color-button-bg;
+    background-color: $color-button-bg;
     padding: 5px;
     border-radius: 5px;
     color: $color-card-bg;
@@ -40,17 +45,29 @@ $padding-contact:30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #CBBDF7; 
+        box-shadow: 0 0 6px #CBBDF7aa;
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
 }
-.contactInfo{
+
+.contactInfo {
     display: flex;
     flex-direction: column;
-    background-color:$color-contact-panel ;
+    background-color: $color-contact-panel ;
     width: 50%;
     padding: $padding-contact;
     border-radius: 15px;
     align-items: center;
 }
-.contactInfoItemList{
+
+.contactInfoItemList {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -58,7 +75,8 @@ $padding-contact:30px;
     gap: 10px;
     margin-bottom: 20px;
 }
-.contactIcon{
+
+.contactIcon {
     display: inline-flex;
     align-items: center;
     padding: 6px;
@@ -66,16 +84,19 @@ $padding-contact:30px;
     border-radius: 20px;
     margin-right: 5px;
 }
-.contactIcon svg{
+
+.contactIcon svg {
     width: 30px;
     height: 30px;
     object-fit: contain;
     font-size: 2em;
 }
-.styledLink{
+
+.styledLink {
     text-decoration: none;
 }
-.contactAnimationDiv{
+
+.contactAnimationDiv {
     height: 200px;
     width: 200px;
 }

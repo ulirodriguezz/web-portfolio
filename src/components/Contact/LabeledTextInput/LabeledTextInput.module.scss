@@ -1,33 +1,66 @@
 @use '../../../styles/tokens' as *;
-$label-height:2em;
-$label-padding:3px;
-$label-border-radius:4px;
-$label-border:1px solid transparent;
-$label-text-color:rgb(228, 196, 240);
-.labeledInputDiv{
-    display: flex;
-    flex-direction: column;
+$label-height: 2em;
+$label-padding: 3px;
+$label-border-radius: 4px;
+$label-border: 1px solid transparent;
+$label-text-color: rgb(228, 196, 240);
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: $label-text-color;
 }
-.inputLabel{
-    color:$color-button-text;
+
+
+.labeledInputDiv {
+  display: flex;
+  flex-direction: column;
 }
-.contactInput{
-    background-color: $color-contact-panel;
-    padding: $label-padding;
-    border-radius: $label-border-radius;    
-    border: $label-border;
-    height: $label-height;
-    color: $label-text-color;
+
+.inputLabel {
+  color: $color-button-text;
 }
-.tetxtArea{
-    background-color: $color-contact-panel;
-    padding: $label-padding;
-    border-radius: $label-border-radius;
-    border: $label-border;
-    height: $label-height*3;    
-    resize: none;
-    color: $label-text-color;
+
+.contactInput {
+  background-color: $color-contact-panel;
+  padding: $label-padding;
+  border-radius: $label-border-radius;
+  border: $label-border;
+  height: $label-height;
+  color: $label-text-color;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #CBBDF7;
+    box-shadow: 0 0 4px #A98CF2aa;
+  }
+
+  &::placeholder {
+    color: rgba(228, 196, 240, 0.5);
+  }
 }
+
+.tetxtArea {
+  background-color: $color-contact-panel;
+  padding: $label-padding;
+  border-radius: $label-border-radius;
+  border: $label-border;
+  height: $label-height*3;
+  resize: none;
+  color: $label-text-color;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #CBBDF7;
+    box-shadow: 0 0 4px #A98CF2aa;
+  }
+
+  &::placeholder {
+    color: rgba(228, 196, 240, 0.5);
+  }
+}
+
 .tetxtArea::-webkit-scrollbar {
   width: 5px;
 }
@@ -37,7 +70,11 @@ $label-text-color:rgb(228, 196, 240);
 }
 
 .tetxtArea::-webkit-scrollbar-thumb {
-  background-color:#A98CF2; // o cualquier color tuyo
+  background-color: #A98CF2;
   border-radius: 4px;
-  border: 2px solid transparent; // para padding visual
+  border: 2px solid transparent;
+}
+
+.errorInput {
+  border: 1px solid #D94F70;
 }
