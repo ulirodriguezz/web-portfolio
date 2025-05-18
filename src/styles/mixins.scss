@@ -1,5 +1,7 @@
 @use '../styles/tokens' as t;
 
+$input-font-size:1.5rem;
+
 @mixin base-input($height) {
   background-color: t.$color-contact-panel;
   padding: t.$label-padding;
@@ -8,7 +10,7 @@
   color: t.$label-text-color;
   height: $height;
   transition: border 0.2s ease, box-shadow 0.2s ease;
-
+  font-size: $input-font-size;
   &::placeholder {
     color: rgba(228, 196, 240, 0.5);
   }

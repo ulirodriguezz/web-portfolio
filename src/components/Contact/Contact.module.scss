@@ -1,21 +1,22 @@
 @use '../../styles/tokens' as *;
 
 
-$padding-contact: 1.8em;
+$padding-contact: 3rem;
 $icon-bg-color: #241f36;
 $button-hover: #CBBDF7;
 $button-hover-shadow: #CBBDF7aa;
-$icon-size: 0.8em;
-$contact-radius: 1.8em;
+$icon-size: 2.5rem;
+$contact-radius: 2rem;
+$contact-info-font-size:1.5rem;
 
 .contactSection {
   display: flex;
-  width: 80%;
+  width: 70%;
   height:80vh;
   background-color: $color-contact-bg;
   padding: $padding-contact;
   border-radius: $contact-radius;
-  gap: 3em;
+  gap: calc($padding-contact*2);
 }
 
 
@@ -31,12 +32,13 @@ $contact-radius: 1.8em;
   flex-direction: column;
   align-items: center;
   background-color: transparent;
+  margin-bottom: 2rem;
 }
 
 .contactForm {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2.2rem;
   height: 100%;
 }
 
@@ -45,14 +47,14 @@ $contact-radius: 1.8em;
   background-color: $color-button-bg;
   color: $color-card-bg;
   font-weight: bold;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
   border: 1px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s ease, transform 0.1s ease;
-
+  font-size: $contact-info-font-size;
   &:hover {
     background-color: $button-hover;
     box-shadow: 0 0 6px $button-hover-shadow;
@@ -70,46 +72,59 @@ $contact-radius: 1.8em;
   width: 50%;
   background-color: $color-contact-panel;
   padding: $padding-contact;
-  border-radius: 15px;
+  border-radius: $contact-radius;
   align-items: center;
 }
-
+.contactInfoHeader{
+  margin-bottom: 3rem;
+}
 .contactInfoItemList {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: calc($padding-contact / 2);
   width: 100%;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 6em;
 }
 
 .contactIcon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 6px;
+  padding: 0.8em;
   background-color: $icon-bg-color;
-  border-radius: 20px;
-  margin-right: 5px;
+  border-radius: 3em;
+  margin-right: 1em;
 
   svg {
     width: $icon-size;
     height: $icon-size;
-    font-size: 2em;
+    font-size: 3em;
     object-fit: contain;
   }
 }
-
+.contactInfoText{
+  font-size: $contact-info-font-size;
+  color: $color-heading;
+}
 .styledLink {
+  font-size: $contact-info-font-size;
   text-decoration: none;
   color: $color-link;
-
   &:hover {
     color: $color-link-hover;
   }
 }
 
 .contactAnimationDiv {
-  width: 200px;
-  height: 200px;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    height:100%;
+    width:auto;
+    object-fit: contain;
+  }
 }

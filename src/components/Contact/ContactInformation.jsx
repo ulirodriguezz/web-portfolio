@@ -6,7 +6,9 @@ import styles from './Contact.module.scss';
 function ContactInformation() {
     return (
         <aside className={styles.contactInfo}>
-            <h4 className='my-h4'>Contact Information</h4>
+            <header className={styles.contactInfoHeader}>
+                <h4 className='my-h4'>Contact Information</h4>
+            </header>
             <div className={styles.contactInfoItemList}>
                 <FlexBoxDiv>
                     <div className={styles.contactIcon}>
@@ -29,7 +31,7 @@ function ContactInformation() {
             </div>
 
             <div className={styles.contactAnimationDiv}>
-                <img style={{ height: '200px' }} src='../../src/assets/animated-icons/contact-aniamtion.gif' alt="" />
+                <img src='../../src/assets/animated-icons/contact-aniamtion.gif' alt="" />
             </div>
 
         </aside>

@@ -1,11 +1,12 @@
 @use '../../../styles/tokens' as *;
 @use '../../../styles/mixins' as *;
-$label-height: 2em;
-$label-padding: 3px;
-$label-border-radius: 4px;
+$input-height: 4rem;
+$label-padding: 1rem;
+$label-border-radius: 0.5rem;
 $label-border: 1px solid transparent;
 $label-text-color: rgb(228, 196, 240);
 $input-focus-border: #CBBDF7;
+$label-font-size:1.2rem;
 $input-focus-glow: #A98CF2aa;
 $input-error: #D94F70;
 
@@ -16,6 +17,8 @@ input:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: $label-text-color;
   box-shadow: 0 0 0 1000px $color-contact-panel inset;
+  font-size: $input-font-size;
+
 }
 
 
@@ -27,14 +30,16 @@ input:-webkit-autofill:focus {
 
 .inputLabel {
   color: $color-button-text;
+  font-size: $label-font-size;
+  margin-bottom: 0.2rem;
 }
 
 .contactInput {
-  @include base-input($label-height);
+  @include base-input($input-height);
 }
 
 .textArea {
-  @include base-input( calc(#{$label-height} * 3));
+  @include base-input( calc(#{$input-height} * 3.5));
   resize: none;
   
   &::-webkit-scrollbar {
