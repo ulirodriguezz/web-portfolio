@@ -16,7 +16,7 @@ function LabeledTextInput ({name,id,label,placeholder,type = 'text',size='regula
          return(
             <div className={styles.labeledInputDiv}>
                 <label htmlFor={name} className={styles.inputLabel}>{label}</label>
-                <textarea name={name} id={id} placeholder={placeholder} className={`${error?styles.errorInput:''} ${styles.tetxtArea}`} onChange={onChange}>
+                <textarea name={name} id={id} placeholder={placeholder} className={`${error?styles.errorInput:''} ${styles.textArea}`} onChange={onChange}>
                 </textarea>
             </div>
         )

@@ -1,102 +1,115 @@
 @use '../../styles/tokens' as *;
 
+
 $padding-contact: 30px;
+$icon-bg-color: #241f36;
+$button-hover: #CBBDF7;
+$button-hover-shadow: #CBBDF7aa;
+$icon-size: 30px;
+$contact-radius: 30px;
 
 .contactSection {
-    display: flex;
-    width: 80%;
-    height: 550px;
-    background-color: $color-contact-bg;
-    padding: $padding-contact;
-    border-radius: 30px;
-    gap: 60px;
+  display: flex;
+  width: 80%;
+  height: 550px;
+  background-color: $color-contact-bg;
+  padding: $padding-contact;
+  border-radius: $contact-radius;
+  gap: 60px;
 }
 
+
 .contactFormDiv {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
 }
 
 .contactFormHeader {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
 }
 
 .contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
 }
 
 .contactSubmitButton {
-    margin-top: auto;
-    justify-self: flex-end;
-    background-color: $color-button-bg;
-    padding: 5px;
-    border-radius: 5px;
-    color: $color-card-bg;
-    font-weight: bold;
-    border: 1px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
+  margin-top: auto;
+  background-color: $color-button-bg;
+  color: $color-card-bg;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 
-    &:hover {
-        background-color: #CBBDF7; 
-        box-shadow: 0 0 6px #CBBDF7aa;
-    }
+  &:hover {
+    background-color: $button-hover;
+    box-shadow: 0 0 6px $button-hover-shadow;
+  }
 
-    &:active {
-        transform: scale(0.97);
-    }
+  &:active {
+    transform: scale(0.97);
+  }
 }
 
+
 .contactInfo {
-    display: flex;
-    flex-direction: column;
-    background-color: $color-contact-panel ;
-    width: 50%;
-    padding: $padding-contact;
-    border-radius: 15px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: $color-contact-panel;
+  padding: $padding-contact;
+  border-radius: 15px;
+  align-items: center;
 }
 
 .contactInfoItemList {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .contactIcon {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px;
-    background-color: #241f36;
-    border-radius: 20px;
-    margin-right: 5px;
-}
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background-color: $icon-bg-color;
+  border-radius: 20px;
+  margin-right: 5px;
 
-.contactIcon svg {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
+  svg {
+    width: $icon-size;
+    height: $icon-size;
     font-size: 2em;
+    object-fit: contain;
+  }
 }
 
 .styledLink {
-    text-decoration: none;
+  text-decoration: none;
+  color: $color-link;
+
+  &:hover {
+    color: $color-link-hover;
+  }
 }
 
 .contactAnimationDiv {
-    height: 200px;
-    width: 200px;
+  width: 200px;
+  height: 200px;
 }

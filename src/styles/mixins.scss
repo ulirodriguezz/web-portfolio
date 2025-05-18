@@ -1,0 +1,21 @@
+@use '../styles/tokens' as t;
+
+@mixin base-input($height) {
+  background-color: t.$color-contact-panel;
+  padding: t.$label-padding;
+  border-radius: t.$label-border-radius;
+  border: t.$label-border;
+  color: t.$label-text-color;
+  height: $height;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+
+  &::placeholder {
+    color: rgba(228, 196, 240, 0.5);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid t.$input-focus-border;
+    box-shadow: 0 0 4px t.$input-focus-glow;
+  }
+}

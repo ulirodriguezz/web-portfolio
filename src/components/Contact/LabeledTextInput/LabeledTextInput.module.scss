@@ -1,15 +1,21 @@
 @use '../../../styles/tokens' as *;
+@use '../../../styles/mixins' as *;
 $label-height: 2em;
 $label-padding: 3px;
 $label-border-radius: 4px;
 $label-border: 1px solid transparent;
 $label-text-color: rgb(228, 196, 240);
+$input-focus-border: #CBBDF7;
+$input-focus-glow: #A98CF2aa;
+$input-error: #D94F70;
+
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: $label-text-color;
+  box-shadow: 0 0 0 1000px $color-contact-panel inset;
 }
 
 
@@ -18,63 +24,35 @@ input:-webkit-autofill:focus {
   flex-direction: column;
 }
 
+
 .inputLabel {
   color: $color-button-text;
 }
 
 .contactInput {
-  background-color: $color-contact-panel;
-  padding: $label-padding;
-  border-radius: $label-border-radius;
-  border: $label-border;
-  height: $label-height;
-  color: $label-text-color;
-
-  &:focus {
-    outline: none;
-    border: 1px solid #CBBDF7;
-    box-shadow: 0 0 4px #A98CF2aa;
-  }
-
-  &::placeholder {
-    color: rgba(228, 196, 240, 0.5);
-  }
+  @include base-input($label-height);
 }
 
-.tetxtArea {
-  background-color: $color-contact-panel;
-  padding: $label-padding;
-  border-radius: $label-border-radius;
-  border: $label-border;
-  height: $label-height*3;
+.textArea {
+  @include base-input( calc(#{$label-height} * 3));
   resize: none;
-  color: $label-text-color;
-
-  &:focus {
-    outline: none;
-    border: 1px solid #CBBDF7;
-    box-shadow: 0 0 4px #A98CF2aa;
+  
+  &::-webkit-scrollbar {
+    width: 5px;
   }
 
-  &::placeholder {
-    color: rgba(228, 196, 240, 0.5);
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #A98CF2;
+    border-radius: 4px;
+    border: 2px solid transparent;
   }
 }
 
-.tetxtArea::-webkit-scrollbar {
-  width: 5px;
-}
-
-.tetxtArea::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.tetxtArea::-webkit-scrollbar-thumb {
-  background-color: #A98CF2;
-  border-radius: 4px;
-  border: 2px solid transparent;
-}
 
 .errorInput {
-  border: 1px solid #D94F70;
+  border: 1px solid $input-error;
 }
