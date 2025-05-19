@@ -8,11 +8,11 @@ $button-hover-shadow: #CBBDF7aa;
 $icon-size: clamp(1.4rem, -0.0143rem + 1.5714vw, 2.5rem);
 $contact-radius: clamp(1.12rem, -0.0114rem + 1.2571vw, 2rem);
 $contact-info-font-size:clamp(0.84rem, -0.0086rem + 0.9429vw, 1.5rem);
-$margin-header:clamp(1.12rem, -0.0114rem + 1.2571vw, 2rem);
+$margin-header:clamp(1rem, -0.2857rem + 1.4286vw, 2rem);
 .contactSection {
   display: flex;
   width: 70%;
-  height:clamp(36.4rem, -0.3714rem + 40.8571vw, 65rem);
+  height:clamp(35.4rem, -2.6571rem + 42.2857vw, 65rem);
   background-color: $color-contact-bg;
   padding: $padding-contact;
   border-radius: $contact-radius;
