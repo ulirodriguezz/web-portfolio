@@ -2,9 +2,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 30px;
+    margin-top: clamp(1.59rem, 0.0169rem + 1.8645vw, 3rem);
     align-items: center;
     div{
-        margin-bottom: 20px;
+        margin-bottom: clamp(0.636rem, 0.0067rem + 0.7458vw, 1.2rem);
+    }
+    span{
+        font-size: clamp(0.795rem, 0.0084rem + 0.9322vw, 1.5rem);
     }
 }

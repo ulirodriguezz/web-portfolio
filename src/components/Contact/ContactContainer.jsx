@@ -8,11 +8,11 @@ import ContactInformation from './ContactInformation';
 function ContactContainer() {
     const [messageSent, setMessageSent] = useState(false);
     const handleSubmit = (msg) => {
-        emailjs.send(
-            import.meta.env.VITE_EMAILJS_SERVICE_ID,
-            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-            msg,    
-        ).then((response) =>{console.log('mail enviado')},(error)=>{alert('Error al enviar el mensaje')})
+        // emailjs.send(
+        //     import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        //     import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        //     msg,    
+        // ).then((response) =>{console.log('mail enviado')},(error)=>{alert('Error al enviar el mensaje')})
         setMessageSent(true);
     }
     return (

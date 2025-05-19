@@ -39,7 +39,7 @@ function App() {
       />
       <Navbar />
       <Routes location={location}>
-        <Route path='/' element={<Home setTheme={setTheme} />} />
+        <Route path='/' element={<Home/>} />
         <Route path='/contact' element={<ContactContainer />} />
         <Route path='/profile' element={<></>} />
         <Route path='/projects' element={<></>} />

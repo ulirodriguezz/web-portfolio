@@ -1,6 +1,8 @@
 .iconContainer{
     padding: 0;
     display:inline-block;
+    height: clamp(11.66rem, 0.1236rem + 13.6727vw, 22rem);
+    width: clamp(11.66rem, 0.1236rem + 13.6727vw, 22rem);
     div{
         height: 100%;
         width: 100%;
