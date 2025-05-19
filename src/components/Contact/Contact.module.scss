@@ -1,22 +1,24 @@
 @use '../../styles/tokens' as *;
 
 
-$padding-contact: 3rem;
+$padding-contact: clamp(1.5rem,1vw + 1rem,3rem);
 $icon-bg-color: #241f36;
 $button-hover: #CBBDF7;
 $button-hover-shadow: #CBBDF7aa;
-$icon-size: 2.5rem;
-$contact-radius: 2rem;
-$contact-info-font-size:1.5rem;
-
+$icon-size: clamp(1.75rem, 0.7857rem + 1.0714vw, 2.5rem);
+$contact-radius: clamp(1.5rem, 0.8571rem + 0.7143vw, 2rem);
+$contact-info-font-size:clamp(1rem, 0.3571rem + 0.7143vw, 1.5rem);
+$margin-header:clamp(1.5rem, 0.8571rem + 0.7143vw, 2rem);
 .contactSection {
   display: flex;
   width: 70%;
-  height:80vh;
+  height:clamp(43.3333rem, 15.4761rem + 30.9524vw, 65rem);
   background-color: $color-contact-bg;
   padding: $padding-contact;
   border-radius: $contact-radius;
   gap: calc($padding-contact*2);
+  justify-self: center;
+  align-self: center;
 }
 
 
@@ -32,13 +34,13 @@ $contact-info-font-size:1.5rem;
   flex-direction: column;
   align-items: center;
   background-color: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: $margin-header;
 }
 
 .contactForm {
   display: flex;
   flex-direction: column;
-  gap: 2.2rem;
+  gap: clamp(1rem, -0.5429rem + 1.7143vw, 2.2rem);
   height: 100%;
 }
 
@@ -76,7 +78,7 @@ $contact-info-font-size:1.5rem;
   align-items: center;
 }
 .contactInfoHeader{
-  margin-bottom: 3rem;
+  margin-bottom: $margin-header;
 }
 .contactInfoItemList {
   display: flex;
@@ -84,22 +86,20 @@ $contact-info-font-size:1.5rem;
   gap: calc($padding-contact / 2);
   width: 100%;
   align-items: flex-start;
-  margin-bottom: 6em;
+  margin-bottom: clamp(3rem, -0.8571rem + 4.2857vw, 6rem);
 }
 
 .contactIcon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8em;
+  padding: 0.8rem;
   background-color: $icon-bg-color;
-  border-radius: 3em;
-  margin-right: 1em;
+  border-radius: 3rem;
+  margin-right: 1rem;
 
   svg {
-    width: $icon-size;
-    height: $icon-size;
-    font-size: 3em;
+    font-size: $icon-size;
     object-fit: contain;
   }
 }

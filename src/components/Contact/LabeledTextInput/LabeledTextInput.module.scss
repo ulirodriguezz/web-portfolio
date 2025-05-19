@@ -1,12 +1,12 @@
 @use '../../../styles/tokens' as *;
 @use '../../../styles/mixins' as *;
-$input-height: 4rem;
+$input-height: clamp(2rem, -0.5714rem + 2.8571vw, 4rem);
 $label-padding: 1rem;
 $label-border-radius: 0.5rem;
 $label-border: 1px solid transparent;
 $label-text-color: rgb(228, 196, 240);
 $input-focus-border: #CBBDF7;
-$label-font-size:1.2rem;
+$label-font-size:clamp(0.6rem, -0.1714rem + 0.8571vw, 1.2rem);
 $input-focus-glow: #A98CF2aa;
 $input-error: #D94F70;
 
