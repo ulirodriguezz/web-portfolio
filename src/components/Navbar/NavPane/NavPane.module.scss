@@ -1,82 +1,86 @@
 @use '../../../styles/tokens' as *;
 @use 'sass:color';
-//Pasar al light y dark mode
-$color-header-bg: rgba(24, 22, 36, 0.65);
-.navTitle{
+@use '../../../styles/mixins' as *;
+
+$nav-height: clamp(2.544rem, 0.027rem + 2.9831vw, 4.8rem);
+
+.mainHeader {
+  @include sticky-header;
+  @include flex-center;
+
+  height: $nav-height;
+  margin-bottom: clamp(1rem, -0.1157rem + 1.3223vw, 2rem);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right,
+      rgba(24, 22, 36, 0) 0%,
+      rgba(24, 22, 36, 0.9) 40%,
+      rgba(24, 22, 36, 0.9) 60%,
+      rgba(24, 22, 36, 0) 100%);
+}
+
+.navTitle {
   justify-self: flex-start;
   position: absolute;
-  left: 10px;
-}
-.navPane {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  position: relative;
-}
-.mainHeader {
-  display: flex;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  height: 50px;
-  margin: 0 0 20px 0;
-  padding-top: 1px;
-  background: linear-gradient(
-  to right,
-  rgba(24, 22, 36, 0) 0%,
-  rgba(24, 22, 36, 0.90) 40%,
-  rgba(24, 22, 36, 0.90) 60%,
-  rgba(24, 22, 36, 0) 100%
-);
-}
-.navUl{
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  height: 100%;
+  left: clamp(0.53rem, 0.0056rem + 0.6215vw, 1rem);
   margin: 0;
 }
-.navLi{
+
+.navPane {
+  @include flex-center;
+  position: relative;
+  background-color: transparent;
+}
+
+.navUl {
+  @include flex-center;
+  background-color: transparent;
+  padding-top: 0.1rem;
+  height: $nav-height;
+  margin: 0;
+}
+
+.navLi {
+  @include flex-center;
   background-color: transparent;
   list-style: none;
-  display: flex;
-  align-items: center;
   height: 100%;
-  padding: 0 15px 0 15px;
-  border-radius: 5px;
+  border-radius: clamp(0.265rem, 0.0028rem + 0.3107vw, 0.5rem);
   position: relative;
   cursor: pointer;
-  
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: $color-link-hover;
-    transition: width 0.3s ease, left 0.3s ease;
+
+  a {
+    font-size: clamp(0.636rem, 0.0067rem + 0.7458vw, 1.2rem);
+    height: 100%;
+    width: 100%;
+    padding: clamp(0.901rem, 0.0096rem + 1.0565vw, 1.7rem);
   }
 
-  &:hover::after {
-    width: 100%;
-    left: 0;
+  &::after {
+    @include underline-hover($color-link-hover);
+    top: 0;
+    left: 50%;
   }
-  &:hover{
+
+  &:hover {
     background-color: rgb(21, 20, 28);
+
+    &::after {
+      width: 100%;
+      left: 0;
+    }
+
+    .link {
+      color: $color-link-hover;
+      transform: scale(1.05);
+    }
   }
-  .link{
+
+  .link {
     transition: transform 0.2s ease-in;
   }
-  &:hover .link{
-    color: $color-link-hover;
-    transform: scale(1.05);
-  }
 }
+
 .link {
   display: flex;
   background-color: transparent;
@@ -90,16 +94,8 @@ $color-header-bg: rgba(24, 22, 36, 0.65);
   align-items: center;
 
   &::after {
-    content: '';
-    position: absolute;
+    @include underline-hover($color-link-hover);
     bottom: -3px;
     left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: $color-link-hover;
-    transition: width 0.3s ease, left 0.3s ease;
   }
-
-
 }
-

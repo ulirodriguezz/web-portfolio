@@ -1,9 +1,18 @@
 @use '../../styles/tokens' as *;
-.tabsDiv{
+
+.tabsDiv {
     width: 100%;
     margin-bottom: $margin-medium;
+
+    button {
+        font-size: clamp(0.795rem, 0.0084rem + 0.9322vw, 1.5rem);
+    }
 }
+
 :global(.tab-content > .active) {
     color: $color-paragraph;
 }
 
+:global(.nav-link){
+    padding: clamp(0.42rem, -0.004rem + 0.5025vw, 0.8rem) clamp(0.8rem, 0.019rem + 0.9256vw, 1.5rem);
+}

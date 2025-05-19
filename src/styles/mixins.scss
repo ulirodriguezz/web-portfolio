@@ -21,3 +21,24 @@ $input-font-size:clamp(0.795rem, 0.0084rem + 0.9322vw, 1.5rem);
     box-shadow: 0 0 4px t.$input-focus-glow;
   }
 }
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin underline-hover($color) {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease, left 0.3s ease;
+  background-color: $color;
+}
+
+@mixin sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}

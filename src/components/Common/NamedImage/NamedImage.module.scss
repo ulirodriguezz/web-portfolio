@@ -1,15 +1,20 @@
 @use '../../../styles/tokens' as *;
 
-.namedImageDiv{
+$image-size: clamp(2.65rem, 0.0281rem + 3.1074vw, 5rem);
+$name-size:clamp(0.795rem, 0.0084rem + 0.9322vw, 1.5rem);
+.namedImageDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.namedImageDiv img{
-    height: 60px;
-    width: 60px;
-    object-fit: contain;
-}
-.namedImageDiv span{
-    color:$color-heading;
+
+    img {
+        height: $image-size;
+        width: $image-size;
+        object-fit: contain;
+    }
+
+    span {
+        color: $color-heading;
+        font-size: $name-size;
+    }
 }

@@ -3,5 +3,5 @@
     margin-bottom:$margin-big;
 }
 .title{
-    font-size: 1.5em;
+    font-size: clamp(0.795rem, 0.0084rem + 0.9322vw, 1.5rem);
 }
