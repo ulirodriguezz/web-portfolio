@@ -5,14 +5,14 @@ $padding-contact: clamp(1.5rem,1vw + 1rem,3rem);
 $icon-bg-color: #241f36;
 $button-hover: #CBBDF7;
 $button-hover-shadow: #CBBDF7aa;
-$icon-size: clamp(1.75rem, 0.7857rem + 1.0714vw, 2.5rem);
-$contact-radius: clamp(1.5rem, 0.8571rem + 0.7143vw, 2rem);
-$contact-info-font-size:clamp(1rem, 0.3571rem + 0.7143vw, 1.5rem);
-$margin-header:clamp(1.5rem, 0.8571rem + 0.7143vw, 2rem);
+$icon-size: clamp(1.4rem, -0.0143rem + 1.5714vw, 2.5rem);
+$contact-radius: clamp(1.12rem, -0.0114rem + 1.2571vw, 2rem);
+$contact-info-font-size:clamp(0.84rem, -0.0086rem + 0.9429vw, 1.5rem);
+$margin-header:clamp(1.12rem, -0.0114rem + 1.2571vw, 2rem);
 .contactSection {
   display: flex;
   width: 70%;
-  height:clamp(43.3333rem, 15.4761rem + 30.9524vw, 65rem);
+  height:clamp(36.4rem, -0.3714rem + 40.8571vw, 65rem);
   background-color: $color-contact-bg;
   padding: $padding-contact;
   border-radius: $contact-radius;
@@ -40,7 +40,7 @@ $margin-header:clamp(1.5rem, 0.8571rem + 0.7143vw, 2rem);
 .contactForm {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, -0.5429rem + 1.7143vw, 2.2rem);
+  gap: clamp(1.232rem, -0.0126rem + 1.3829vw, 2.2rem);
   height: 100%;
 }
 
@@ -93,10 +93,10 @@ $margin-header:clamp(1.5rem, 0.8571rem + 0.7143vw, 2rem);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem;
+  padding: clamp(0.448rem, -0.0046rem + 0.5029vw, 0.8rem);
   background-color: $icon-bg-color;
   border-radius: 3rem;
-  margin-right: 1rem;
+  margin-right: clamp(0.56rem, -0.0057rem + 0.6286vw, 1rem);
 
   svg {
     font-size: $icon-size;
