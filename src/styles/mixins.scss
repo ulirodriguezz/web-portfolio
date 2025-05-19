@@ -1,6 +1,6 @@
 @use '../styles/tokens' as t;
 
-$input-font-size:clamp(0.75rem, -0.2143rem + 1.0714vw, 1.5rem);
+$input-font-size:clamp(0.795rem, 0.0084rem + 0.9322vw, 1.5rem);
 
 @mixin base-input($height) {
   background-color: t.$color-contact-panel;
