@@ -137,3 +137,12 @@ $margin-header: clamp(1.06rem, 0.0112rem + 1.243vw, 2rem);
     object-fit: contain;
   }
 }
+
+.toastAlert{
+  background-color: $color-button-bg;
+  color: black;
+  font-weight: 500;
+  button{
+    color: black;
+  }
+}
