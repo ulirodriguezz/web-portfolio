@@ -7,18 +7,20 @@ $button-hover: #CBBDF7;
 $button-hover-shadow: #CBBDF7aa;
 $icon-size: clamp(1.325rem, 0.014rem + 1.5537vw, 2.5rem);
 $contact-radius: clamp(1.06rem, 0.0112rem + 1.243vw, 2rem);
-$contact-info-font-size:clamp(0.795rem, 0.0084rem + 0.9322vw, 1.5rem);
-$margin-header:clamp(1.06rem, 0.0112rem + 1.243vw, 2rem);
+$contact-info-font-size: clamp(0.795rem, 0.0084rem + 0.9322vw, 1.5rem);
+$margin-header: clamp(1.06rem, 0.0112rem + 1.243vw, 2rem);
+
 .contactSection {
   display: flex;
   width: 70%;
-  height:clamp(34.45rem, 0.3653rem + 40.3967vw, 65rem);
+  height: clamp(34.45rem, 0.3653rem + 40.3967vw, 65rem);
   background-color: $color-contact-bg;
   padding: $padding-contact;
   border-radius: $contact-radius;
   gap: calc($padding-contact*2);
-  justify-self: center;
-  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
 }
 
 
@@ -40,7 +42,7 @@ $margin-header:clamp(1.06rem, 0.0112rem + 1.243vw, 2rem);
 .contactForm {
   display: flex;
   flex-direction: column;
-  gap: clamp(1.166rem, 0.0124rem + 1.3673vw, 2.2rem);
+  gap: clamp(1rem, -0.3388rem + 1.5868vw, 2.2rem);
   height: 100%;
 }
 
@@ -57,6 +59,7 @@ $margin-header:clamp(1.06rem, 0.0112rem + 1.243vw, 2rem);
   align-items: center;
   transition: background-color 0.3s ease, transform 0.1s ease;
   font-size: $contact-info-font-size;
+
   &:hover {
     background-color: $button-hover;
     box-shadow: 0 0 6px $button-hover-shadow;
@@ -77,9 +80,11 @@ $margin-header:clamp(1.06rem, 0.0112rem + 1.243vw, 2rem);
   border-radius: $contact-radius;
   align-items: center;
 }
-.contactInfoHeader{
+
+.contactInfoHeader {
   margin-bottom: $margin-header;
 }
+
 .contactInfoItemList {
   display: flex;
   flex-direction: column;
@@ -103,14 +108,17 @@ $margin-header:clamp(1.06rem, 0.0112rem + 1.243vw, 2rem);
     object-fit: contain;
   }
 }
-.contactInfoText{
+
+.contactInfoText {
   font-size: $contact-info-font-size;
   color: $color-heading;
 }
+
 .styledLink {
   font-size: $contact-info-font-size;
   text-decoration: none;
   color: $color-link;
+
   &:hover {
     color: $color-link-hover;
   }
@@ -122,9 +130,10 @@ $margin-header:clamp(1.06rem, 0.0112rem + 1.243vw, 2rem);
   display: flex;
   align-items: center;
   justify-content: center;
-  img{
-    height:100%;
-    width:auto;
+
+  img {
+    height: 100%;
+    width: auto;
     object-fit: contain;
   }
 }
